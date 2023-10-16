@@ -1,0 +1,92 @@
+{
+  "api": {
+    "HockeyAPIAmp": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "LambdaHockeyAPIGet"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "hockeydraft50aa97c1": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "LambdaHockeyAPIGet": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "LambdaHockeyAPIPost": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_LambdaHockeyAPIGet_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "LambdaHockeyAPIGet"
+        }
+      ]
+    },
+    "AMPLIFY_function_LambdaHockeyAPIGet_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "LambdaHockeyAPIGet"
+        }
+      ]
+    },
+    "AMPLIFY_function_LambdaHockeyAPIPost_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "LambdaHockeyAPIPost"
+        }
+      ]
+    },
+    "AMPLIFY_function_LambdaHockeyAPIPost_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "LambdaHockeyAPIPost"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "paths": {
+    "/players": {
+      "name": "/players",
+      "lambdaFunction": "LambdaHockeyAPIGet",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ],
+        "guest": [
+          "read"
+        ]
+      }
+    }
+  }
+}
