@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
 		color: "#fff",
 		fontWeight: "600",
 	},
-	chatscreen: {
+	draftRooms: {
 		backgroundColor: "#F7F7F7",
 		flex: 1,
 		padding: 10,
@@ -62,7 +62,7 @@ export const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "space-between",
 	},
-	chatlistContainer: {
+	draftListContainer: {
 		paddingHorizontal: 10,
 	},
 	chatemptyContainer: {
@@ -154,7 +154,7 @@ export const styles = StyleSheet.create({
 	mvatar: {
 		marginRight: 5,
 	},
-	cchat: {
+	draft: {
 		width: "100%",
 		flexDirection: "row",
 		alignItems: "center",
@@ -167,7 +167,7 @@ export const styles = StyleSheet.create({
 	cavatar: {
 		marginRight: 15,
 	},
-	cusername: {
+	draftName: {
 		fontSize: 18,
 		marginBottom: 5,
 		fontWeight: "bold",
@@ -176,7 +176,7 @@ export const styles = StyleSheet.create({
 		fontSize: 14,
 		opacity: 0.7,
 	},
-	crightContainer: {
+	Container: {
 		flexDirection: "row",
 		justifyContent: "space-between",
 		flex: 1,
